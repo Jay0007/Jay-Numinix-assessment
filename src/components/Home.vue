@@ -16,7 +16,7 @@
       
       <v-col cols="6" sm="4" md= "3" class=" ml-auto ">
         <v-select
-          :items="items"
+          :itemx="items"
           label="Filter by Name (A-Z)"
           flat
           solo
