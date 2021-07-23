@@ -54,9 +54,9 @@ export default {
         this.cards = response.data;
         this.cards.map(function (entry) {
           try {
-            var imgPath = require("../assets/images/" + entry.name + ".jpg");
+            var imgPath = require("../assets/images/" + entry.name + ".jpg"); // eslint-disable-line no-undef
           } catch (err) {
-            imgPath = require("../assets/images/default.jpg");
+            imgPath = require("../assets/images/default.jpg"); // eslint-disable-line no-undef
           }
           entry.image = imgPath;
           return entry;
